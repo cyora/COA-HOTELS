@@ -3,7 +3,7 @@ $today = date("Y-m-d");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <title>COA Hotels</title>
     <link rel="stylesheet" type="text/css" href="css/Head_Foot.css">
@@ -29,7 +29,7 @@ $today = date("Y-m-d");
 
     </script>
 </head>
-<body>
+<body style="background-color: #AEC6CF;">
     <div class="main_logo">
     <div>
         <a href="index.php"><img class="logo"  src="images/logo.png" alt="logo"></a>

@@ -28,7 +28,7 @@ $statementRoomCategories -> closeCursor();
     <link rel="stylesheet" type="text/css" href="css/Head_Foot.css">
     <link rel="stylesheet" type="text/css" href="css/Room.css">
 </head>
-<body>
+<body style="background-color: #AEC6CF;">
 <div class="main_logo">
     <div>
         <a href="index.php"><img class="logo"  src="images/logo.png" alt="logo"></a>
@@ -138,7 +138,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Suites">
-    <img src="images/rooms/Suite-Cardinale-Salon-SAM.jpg" height = "250px"alt="Cardinale">
+    <img src="images/room/Suite-Cardinale-Salon-SAM.jpg" height = "250px"alt="Cardinale">
     <div class="r_des">
         <h4 class="room_name">Claudia Cardinale Suite</h4>
         <p><b>Room Size: </b>1,220 sq. ft.</p><br>
@@ -161,7 +161,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Rooms">
-    <img src="/images/room/Suite-Jean Cocteau-Salon.jpg" height="250px" alt="HUDSON">
+    <img src="images/room/Suite-Jean-Cocteau-Salon.jpg" height="250px" alt="HUDSON">
     <div class="r_des">
         <h4 class="room_name">Jean Cocteau Suite</h4>
         <p><b>Room Size: </b>450 sq. ft. </p><br>
