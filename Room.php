@@ -138,7 +138,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Suites">
-    <img src="https://www.fourseasons.com/alt/img-opt/~70..54,0037-395,8436-2851,8336-1604,1564/publish/content/dam/fourseasons/images/web/NYD/NYD_640_original.jpg" height = "250px"alt="Barclay Suite">
+    <img src="images/rooms/Suite-Cardinale-Salon-SAM.jpg" height = "250px"alt="Cardinale">
     <div class="r_des">
         <h4 class="room_name">Claudia Cardinale Suite</h4>
         <p><b>Room Size: </b>1,220 sq. ft.</p><br>
@@ -161,7 +161,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Rooms">
-    <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-156,1922-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_031_original.jpg" height="250px" alt="HUDSON">
+    <img src="/images/room/Suite-Jean Cocteau-Salon.jpg" height="250px" alt="HUDSON">
     <div class="r_des">
         <h4 class="room_name">Jean Cocteau Suite</h4>
         <p><b>Room Size: </b>450 sq. ft. </p><br>
