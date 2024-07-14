@@ -34,7 +34,7 @@ $statementRoomCategories -> closeCursor();
         <a href="index.php"><img class="logo"  src="images/logo.png" alt="logo"></a>
     </div>
     <div id="hotel_name"><em>
-            KT Plaza Hotel
+            COA Plaza Hotel
         </em>
     </div>
     <div id="top">
