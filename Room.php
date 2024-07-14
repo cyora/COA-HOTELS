@@ -67,7 +67,7 @@ $statementRoomCategories -> closeCursor();
 </form>
 
 <div class="Rooms">
-    <img src="images/room/yassmine.jpg" height =" 250px"alt="Soho">
+    <img src="images/room/yassmine.jpg" height =" 250px"alt="Yassmine">
     <div class="r_des">
         <h4 class="room_name">Yassmine Suite</h4>
         <p><b>Room Size: </b>490 sq. ft</p><br>
@@ -91,7 +91,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Suites">
-    <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-143,5000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_482_original.jpg" height =" 250px" alt="Manhattan">
+    <img src="images/room/Suite-Wallis-Chambre.jpg" height =" 250px" alt="Wallis Simpson">
     <div class="r_des">
         <h4 class="room_name">Wallys Simpson</h4>
         <p><b>Room Size: </b>425 sq. ft.</p><br>
@@ -115,7 +115,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Rooms">
-    <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-312,5000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_643_original.jpg" height ="250 px"alt="liberty">
+    <img src="images/room/Suite-Klee-Salon-SAM.jpg" height ="250 px"alt="August Mack">
     <div class="r_des">
         <h4 class="room_name">August Mack Suite</h4>
         <p><b>Room Size: </b>725 sq. ft.</p><br>
