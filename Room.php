@@ -67,9 +67,9 @@ $statementRoomCategories -> closeCursor();
 </form>
 
 <div class="Rooms">
-    <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-163,2500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_377_original.jpg" height =" 250px"alt="Soho">
+    <img src="images/room/yassmine.jpg" height =" 250px"alt="Soho">
     <div class="r_des">
-        <h4 class="room_name">SOHO ROOM</h4>
+        <h4 class="room_name">Yassmine Suite</h4>
         <p><b>Room Size: </b>490 sq. ft</p><br>
         <p>Located on our highest floors, enjoy skyscraper views of Tribeca in your comforting, contemporary room featuring a deep soaking tub. <b>(<?php echo $RoomCategories['0']['0']; ?> Available)</b></p><br>
         <p></p>
@@ -82,7 +82,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="SOHO ROOM" name="room">
+                <input type="hidden" value="Yassmine Suite" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                 echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
@@ -93,7 +93,7 @@ $statementRoomCategories -> closeCursor();
 <div class="Suites">
     <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-143,5000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_482_original.jpg" height =" 250px" alt="Manhattan">
     <div class="r_des">
-        <h4 class="room_name">MANHATTAN ROOM</h4>
+        <h4 class="room_name">Wallys Simpson</h4>
         <p><b>Room Size: </b>425 sq. ft.</p><br>
         <p>Spacious accommodations with a contemporary design aesthetic and ample closet space for your shopping finds to make you feel right at home.
  <b>(<?php echo $RoomCategories['3']['0']; ?> Available)</b></p><br>
@@ -106,7 +106,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="MANHATTAN ROOM" name="room">
+                <input type="hidden" value="Wallys Simpson" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                     echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
@@ -117,7 +117,7 @@ $statementRoomCategories -> closeCursor();
 <div class="Rooms">
     <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-312,5000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_643_original.jpg" height ="250 px"alt="liberty">
     <div class="r_des">
-        <h4 class="room_name">LIBERTY SUITE</h4>
+        <h4 class="room_name">August Mack Suite</h4>
         <p><b>Room Size: </b>725 sq. ft.</p><br>
         <p>This suite is ideal for the travelling executive or for family and friends, featuring a pull-out sofa in the living room,  <b>(<?php echo $RoomCategories['1']['0']; ?> Available)</b></p><br>
         <p>Rates starting from </p>
@@ -129,7 +129,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="LIBERTY SUITE" name="room">
+                <input type="hidden" value="August Mack Suite" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                     echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
@@ -140,7 +140,7 @@ $statementRoomCategories -> closeCursor();
 <div class="Suites">
     <img src="https://www.fourseasons.com/alt/img-opt/~70..54,0037-395,8436-2851,8336-1604,1564/publish/content/dam/fourseasons/images/web/NYD/NYD_640_original.jpg" height = "250px"alt="Barclay Suite">
     <div class="r_des">
-        <h4 class="room_name">BARCLAY SUITE</h4>
+        <h4 class="room_name">Claudia Cardinale Suite</h4>
         <p><b>Room Size: </b>1,220 sq. ft.</p><br>
         <p>Our open-concept suite welcomes group gatherings, intimate hosted dinners for six and family getaways. <b>(<?php echo $RoomCategories['4']['0']; ?> Available)</b></p><br>
         <p>Price starting from </p>
@@ -152,7 +152,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="BARCLAY SUITE" name="room">
+                <input type="hidden" value="Claudia Cardinale Suite" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                     echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
@@ -163,7 +163,7 @@ $statementRoomCategories -> closeCursor();
 <div class="Rooms">
     <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-156,1922-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/NYD/NYD_031_original.jpg" height="250px" alt="HUDSON">
     <div class="r_des">
-        <h4 class="room_name">HUDSON ROOM</h4>
+        <h4 class="room_name">Jean Cocteau Suite</h4>
         <p><b>Room Size: </b>450 sq. ft. </p><br>
         <p>Located along the Hotel corners with double windows, our brightest room offers unbeatable views of Downtown Manhattan. <b>(<?php echo $RoomCategories['2']['0']; ?> Available)</b></p><br>
         <p>Rates starting from </p>
@@ -175,7 +175,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="HUDSON ROOM" name="room">
+                <input type="hidden" value="Jean Cocteau Suite" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                     echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
@@ -185,7 +185,7 @@ $statementRoomCategories -> closeCursor();
 </div><div class="Suites">
     <img src="https://www.fourseasons.com/alt/img-opt/~70..0,0000-1158,5028-2198,0000-1236,3750/publish/content/dam/fourseasons/images/web/NYD/NYD_214_original.jpg" height =" 250px"alt="OCULUS">
     <div class="r_des">
-        <h4 class="room_name">OCULUS SUITE</h4>
+        <h4 class="room_name">Sea View Fell SUITE</h4>
         <p><b>Room Size: </b>900 sq. ft.</p><br>
         <p>The suite can also be configured as a two-bedroom suite. <b>(<?php echo $RoomCategories['5']['0']; ?> Available)</b></p><br>
         <p>Rates starting from </p>
@@ -197,7 +197,7 @@ $statementRoomCategories -> closeCursor();
                 <input type="hidden" name="adult" value="<?php echo $adult; ?>">
                 <input type="hidden" name="child" value="<?php echo $child; ?>">
                 <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
-                <input type="hidden" value="OCULUS SUITE" name="room">
+                <input type="hidden" value="Sea View Fell SUITE" name="room">
                 <?php if ($RoomCategories['0']['0'] > 0){
                     echo '<input class="submit" type="submit" value="BOOK NOW">'; }else{echo '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSold Out';}
                 ?>
