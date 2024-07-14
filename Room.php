@@ -37,9 +37,13 @@ $statementRoomCategories -> closeCursor();
             COA Plaza Hotel
         </em>
     </div>
+    
     <div id="top">
         <a class="Book_Now_Top" href="Room.php"> &nbspBook Now</a>
     </div>
+    <div id="top">
+            <a class="Book_Now_Top" href="logIn.php" > &nbspLogin</a>
+        </div>
 </div>
 <hr class="hr_1">
 <div class="top_nav">
@@ -210,9 +214,9 @@ $statementRoomCategories -> closeCursor();
 <div class="foot">
     <div class="contact">
     <Strong>Contact Us</Strong><br><br>
-            Address: &nbsp&nbsp&nbsp&nbsp&nbspKimberly's Hilton Plaza<br>
-            Telephone: &nbsp&nbsp (973)243-2121<br><br>
-            Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp contactus@theplazahotel.com<br>
+            Address: &nbsp&nbsp&nbsp&nbsp&nbsp 1 Aouina Plaza <br>
+            Telephone: &nbsp&nbsp (+216)93 758 340<br><br>
+            Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp contactus@coaplazahotel.com<br>
     </div>
     <div class="legal">
         <strong>Legal</strong><br><br>

@@ -236,8 +236,8 @@ Visa / Master <br>
         </div>
         <div id="location">
             <Strong>COA Plaza Hotel</Strong><br><br>
-            <p>Address: &nbsp&nbsp&nbsp&nbsp&nbsp 1 Hilton Plaza</p>
-            <p>Telephone: &nbsp&nbsp (973)243-2121</p>
+            <p>Address: &nbsp&nbsp&nbsp&nbsp&nbsp 1 Aouina Plaza</p>
+            <p>Telephone: &nbsp&nbsp (+216) 93 758 340</p>
             <p>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp contactus@coaplazahotel.com</p>
         </div>
     </div>
@@ -249,7 +249,7 @@ Visa / Master <br>
         <div class="contact">
         <Strong></Strong><br>
             <p>Address: &nbsp&nbsp&nbsp&nbsp&nbsp 1 Aouina Plaza</p>
-            <p>Telephone: &nbsp&nbsp (973)243-2121</p>
+            <p>Telephone: &nbsp&nbsp (+216) 93 758 340</p>
             <p>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp contactus@coaplazahotel.com</p>
         </div>
         <div class="legal">

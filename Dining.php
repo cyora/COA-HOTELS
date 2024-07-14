@@ -15,11 +15,14 @@
         <a href="index.php"><img class="logo"  src="images/logo.png" alt="logo"></a>
     </div>
     <div id="hotel_name">
-        <em>KT Plaza Hotel</em>
+        <em>COA Plaza Hotel</em>
     </div>
     <div id="top">
         <a class="Book_Now_Top" href="Room.php"> &nbspBook Now</a>
     </div>
+    <div id="top">
+            <a class="Book_Now_Top" href="logIn.php" > &nbspLogin</a>
+        </div>
 </div>
 <hr class="hr_1">
 <div class="top_nav">
@@ -84,10 +87,10 @@
 <hr class="hr_1">
 <div class>
     <div class="contact">
-    <Strong>Contact Us</Strong><br><br>
-            Address: &nbsp&nbsp&nbsp&nbsp&nbspKimberly's Hilton Plaza<br>
-            Telephone: &nbsp&nbsp(973)243-2121<br><br>
-            Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp contactus@theplazahotel.com<br>
+    Strong>Contact Us</Strong><br><br>
+            Address: &nbsp&nbsp&nbsp&nbsp&nbsp1 Aouina Plaza <br>
+            Telephone: &nbsp&nbsp (+216)93 758 340<br><br>
+            Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcontactus@coaplazahotel.com<br>
     </div>
     <div class="legal">
         <a href="ServiceDescription.php">Service Description</a><br>
