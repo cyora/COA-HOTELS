@@ -161,7 +161,7 @@ $statementRoomCategories -> closeCursor();
     </div>
 </div>
 <div class="Rooms">
-    <img src="images/room/Suite-Jean Cocteau-Salon.jpg" height="250px" alt="Jean Cocteau">
+    <img src="images/room/Suite-Jean-Cocteau-Salon.jpg" height="250px" alt="Jean Cocteau">
     <div class="r_des">
         <h4 class="room_name">Jean Cocteau Suite</h4>
         <p><b>Room Size: </b>450 sq. ft. </p><br>

@@ -2,26 +2,66 @@
 require ('database.php');
 $Room_name = $_POST['room'];
 
-$queryCart =  'Select Price FROM room_categories WHERE Room_name = :room_name';
-$statementCart = $db -> prepare($queryCart);
-$statementCart -> bindValue(':room_name', $Room_name);
-$statementCart -> execute();
-$price = $statementCart -> fetch();
-$statementCart -> closeCursor();
-$lifetime = 60 * 60 * 24 * 30;
+$queryCart = 'SELECT Price FROM room_categories WHERE Room_name = :room_name';
+$statementCart = $db->prepare($queryCart);
+$statementCart->bindValue(':room_name', $Room_name);
+$statementCart->execute();
+$price = $statementCart->fetch();
+$statementCart->closeCursor();
 
+$queryAvailability = 'SELECT Available FROM room_categories WHERE Room_name = :room_name';
+$statementAvailability = $db->prepare($queryAvailability);
+$statementAvailability->bindValue(':room_name', $Room_name);
+$statementAvailability->execute();
+$nbre_rooms = $statementAvailability->fetchColumn();
+$statementAvailability->closeCursor();
+
+function availability($nbre_rooms){
+    if ($_POST['NumberOfRoom'] > $nbre_rooms) {
+        echo "<script>alert('Sorry, we don\'t have enough rooms for you, please choose another room');window.location.href = 'Room.php';</script>";
+        exit(); // Stop further processing
+    }
+}
+
+// Call the availability function after fetching the available rooms
+availability($nbre_rooms);
+
+$lifetime = 60 * 60 * 24 * 30;
 session_set_cookie_params($lifetime, '/');
 session_start();
 
-$_SESSION['book'] = array('room' =>$Room_name, 'numberofroom' => $_POST['NumberOfRoom'], 'price' => $price['0'], 'check_in' => $_POST['check_in_date'], 'check_out' => $_POST['check_out_date'], 'title' => $_POST['title'], 'first_name' => $_POST['first_name'], 'last_name' => $_POST['last_name'], 'adult' => $_POST['adult'], 'child' => $_POST['child'], 'comment' => $_POST['comment']);
-$_SESSION['address'] = array('title' => $_POST['title'], 'first_name' => $_POST['first_name'], 'last_name' => $_POST['last_name'], 'street' => $_POST['street'], 'city' => $_POST['city'],'state' => $_POST['state']);
-if ( $_SESSION['book']['child'] == ''){$_SESSION['book']['child'] = 0;}
+$_SESSION['book'] = array(
+    'room' => $Room_name, 
+    'numberofroom' => $_POST['NumberOfRoom'], 
+    'price' => $price['0'], 
+    'check_in' => $_POST['check_in_date'], 
+    'check_out' => $_POST['check_out_date'], 
+    'title' => $_POST['title'], 
+    'first_name' => $_POST['first_name'], 
+    'last_name' => $_POST['last_name'], 
+    'adult' => $_POST['adult'], 
+    'child' => $_POST['child'], 
+    'comment' => $_POST['comment']
+);
+$_SESSION['address'] = array(
+    'title' => $_POST['title'], 
+    'first_name' => $_POST['first_name'], 
+    'last_name' => $_POST['last_name'], 
+    'street' => $_POST['street'], 
+    'city' => $_POST['city'], 
+    'state' => $_POST['state']
+);
 
-function add_tax($roomPrice){
-    $tax = $roomPrice * 0.06;
+if ($_SESSION['book']['child'] == '') {
+    $_SESSION['book']['child'] = 0;
+}
+
+function add_tax($roomPrice) {
+    $tax = $roomPrice * 0.19;
     return $tax;
 }
-function total($roomPrice){
+
+function total($roomPrice) {
     $total = $roomPrice * 1.06;
     return $total;
 }
@@ -39,12 +79,9 @@ function total($roomPrice){
 <body>
 <div class="main_logo">
     <div>
-        <a href="index.php"><img class="logo"  src="https://cdn.iconscout.com/icon/free/png-256/hotel-2540586-2125130.png" alt="logo"></a>
+        <a href="index.php"><img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/hotel-2540586-2125130.png" alt="logo"></a>
     </div>
-    <div id="hotel_name"><em>
-            KT Plaza Hotel
-        </em>
-    </div>
+    <div id="hotel_name"><em>COA Plaza Hotel</em></div>
 </div>
 <hr class="hr_1">
 <div class="top_nav">
@@ -82,14 +119,14 @@ function total($roomPrice){
             <p><em><?php echo $_SESSION['book']['child']; ?></em></p>
             <p><em><?php echo $_SESSION['address']['street']?>, <?php echo $_SESSION['address']['city']?>, <?php echo $_SESSION['address']['state']?></em></p>
             <p><em><?php echo $_SESSION['book']['comment']; ?></em></p>
-            </div>
+        </div>
     </div>
     <div id="right">
-        <p><img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/2x/external-invoice-online-bazaar-inipagistudio-lineal-color-inipagistudio.png"  <?php echo $_SESSION['book']['room']; ?>.jpg alt="Room Cost Summary"></p>
-        <p><em>Price: &nbsp&nbsp&nbsp$<?php echo ($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
-        <p><em>Tax: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$<?php echo add_tax($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
+        <p><img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/2x/external-invoice-online-bazaar-inipagistudio-lineal-color-inipagistudio.png" alt="Room Cost Summary"></p>
+        <p><em>Price: &nbsp;&nbsp;&nbsp;$<?php echo ($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
+        <p><em>Tax: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<?php echo add_tax($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
         <hr>
-        <p><em>Total: &nbsp&nbsp&nbsp$<?php echo total($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
+        <p><em>Total: &nbsp;&nbsp;&nbsp;$<?php echo total($_SESSION['book']['price'] * $_SESSION['book']['numberofroom']); ?></em></p>
     </div>
 <?php endif; ?>
 
@@ -103,4 +140,3 @@ function total($roomPrice){
 </div>
 </body>
 </html>
-
